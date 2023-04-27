@@ -1,0 +1,186 @@
+.mmovie{
+    display: flex;
+    background:#000;
+  
+  height: 500px;
+  width: 600px;
+  justify-content: center;
+  margin: 20px;
+  /* margin-left: 300px; */
+  align-items: center;
+  position: relative;
+  
+  border: 1px wheat solid;
+  overflow: hidden;
+  }
+  
+  .mmovie:before{
+    content: '';
+    /* display: flex; */
+    /* background-color: #420d82; */
+    background:linear-gradient(rgba(219, 84, 6, 0.333) , #ee00ff 90%) ;
+    background:linear-gradient(45deg,#000  40%, rgb(2, 84, 131)) ;
+    /* background:linear-gradient(90deg ,rgba(180, 160, 216, 0.849) 30%, #260229 70%) ; */
+  flex-direction: row;
+  /* background-color: transparent; */
+    /* background:linear-gradient( rgba(250, 14, 2, 0.76)35%) ; */
+  height: 180%;
+  width: 800px;
+  /* justify-content: center; */
+  /* inset:30px ; */
+  position: absolute;
+  /* align-items: flex-start; */
+  animation: nnn 1500ms linear infinite;
+  }
+  
+  .mmovie:after{
+    content: "it is time to create movies ";
+    
+    
+   
+    font-size: 30px;
+    text-align: center;
+    line-height: 500px;
+    flex-direction: row;
+    /* background:linear-gradient(rgba(219, 84, 6, 0.333) 10%, #d44bdd 30%,rgba(250, 14, 2, 0.76)) ; flex-direction: column; */
+    background:blue;
+    opacity: 0;
+  /* left: 100px; */
+  overflow: visible;
+  overflow-wrap:normal;
+  position: absolute;
+  inset: 3px;
+  /* background-color: transparent; */
+  z-index: 0;
+  /* align-items: flex-start; */
+  }
+  
+  .movie{
+    display: flex;
+    /* background:linear-gradient(rgba(219, 84, 6, 0.333) 10%, #d44bdd 30%,rgba(250, 14, 2, 0.76)) ;  */
+  /* background-color: #000; */
+    /* background-color: transparent; */
+    /* background:linear-gradient( rgba(4, 33, 87, 0.76)60%,rgba(250, 14, 2, 0.76)) ; */
+    background-color: transparent;
+    background:linear-gradient( rgba(250, 14, 2, 0.76)60%) ;
+  
+    flex-direction: column;
+  height:500px;
+  width: 600px;
+  justify-content: flex-start;
+  /* margin: 20px; */
+  
+  position: relative;
+  z-index: 1;
+  border: 1px wheat solid;
+  overflow: hidden;
+  } 
+  .movie h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    background-color: #370a3a;
+    border-radius: 5px 0 5px 0;
+    margin: 10px;
+    border: 3px wheat  solid ;
+  }
+  .movie input{
+    margin: 10px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    background:linear-gradient(rgba(37, 16, 3, 0.333) 10%, #4a054f 30%,rgba(27, 49, 1, 0.76)) ; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-emphasis: initial;
+  }
+  .movie button{
+    display: flex;
+    height: 30px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 3px 0 3px 0;
+    background: linear-gradient(90deg ,red,yellow);
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border:none;
+    outline: none;
+    justify-content: center;
+    line-height: 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 200ms ease-in-out;
+    /* filter: drop-shadow(0 5px 5px rgb(171, 189, 233)); */
+  
+  
+  }
+  .movie button:hover{
+    filter: drop-shadow(1px 1px 3px rgb(26, 230, 8));
+    font-size: 20px;
+  }
+  .movie label{
+    text-shadow: 10px 2px 10px rgb(1, 1, 51);
+    color: aliceblue;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    margin: 5px;
+  
+  }
+  .movie label:hover{
+    filter: drop-shadow(2px 2px 5px #fff);
+  }
+  .moviecont{
+    display: flex;
+    width: 80%;
+    height: 800px;
+    justify-content: space-evenly;
+    background-color: none;
+    position: relative;
+    margin: 15px;
+  }
+  @keyframes nnn {
+    0%{rotate: 0deg;}
+    100%{rotate: 360deg;
+     
+    }
+  }
+  .movie select{
+width: 250px;
+height: 30px;
+font-size: 20px;
+color: antiquewhite;
+background-color: #4a054f;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 400;
+letter-spacing: 2px;
+line-height: 5px;
+margin: 7px;
+outline: none;
+border: none;
+filter: drop-shadow(2px 2px 5px #fff);
+border-radius: 8px 0 8px 0;
+cursor: pointer;
+  }
+  .movie textarea{
+    display: inline-flex;
+    margin-left: 10px;
+    flex: 1;
+    width: 275px;
+    height: 100px;
+    
+    overflow-wrap: break-word;
+   
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: white;
+    background:linear-gradient(rgba(37, 16, 3, 0.333) 10%, #4a054f 30%,rgba(27, 49, 1, 0.76)) ; 
+    border: 1px rgb(211, 179, 245) solid;
+    overflow: none;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
